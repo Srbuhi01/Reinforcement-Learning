@@ -11,4 +11,4 @@ cision-making in dynamic environments**.
 
 Each project is organized in its own folder with a dedicated `
 README.md` explaining its objectives, methodology, and key fin
-dings.
+dings
