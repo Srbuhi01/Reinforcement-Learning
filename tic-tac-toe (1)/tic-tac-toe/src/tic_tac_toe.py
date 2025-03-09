@@ -158,7 +158,6 @@ def play():
         else:
             print("Its a draw!")
 
-
     # endregion Body
 
 # endregion Functions
