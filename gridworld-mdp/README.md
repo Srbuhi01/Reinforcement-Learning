@@ -1,6 +1,7 @@
 Gridworld MDP
 
-Introduction
+Introduction:
+
 This project implements a Gridworld Markov Decision Process (MDP) where an agent navigates a 5×5 grid, receiving rewards based on its actions. Special states A and B provide rewards and transition the agent to A' and B', respectively.
 
 Features
