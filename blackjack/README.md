@@ -1,4 +1,5 @@
 Blackjack MDP Simulation
+
 This project simulates the classic casino card game Blackjack using Monte Carlo methods for reinforcement learning.
 The game is modeled as an episodic finite Markov Decision Process (MDP) and follows a simplified version of standard Blackjack rules.
 
