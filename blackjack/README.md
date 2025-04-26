@@ -60,7 +60,7 @@ Hit
 
 Stick
 
-📈 Visualizations and Results
+📈 Visualizations and Results:
 1. Initial Policy Value Function (Figure 5.1)
 Visualizing the value function under the initial, random policy before learning:
 
@@ -87,10 +87,11 @@ Weighted Importance Sampling significantly reduces variance and achieves lower e
 
 This behavior is consistent with theoretical expectations and practical use cases.
 
-📚 References
+📚 References:
 Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction (2nd Edition), Chapter 5.
 
-Summary
+Summary:
+
 ✅ Implemented Blackjack as an episodic MDP.
 ✅ Trained optimal policies using Monte Carlo Exploring Starts (MC ES).
 ✅ Extended the project with off-policy evaluation using weighted importance sampling for robust value estimation.
