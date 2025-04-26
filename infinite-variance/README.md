@@ -1,4 +1,5 @@
 Overview
+
 Infinite-Variance implements off-policy first-visit Monte Carlo evaluation using ordinary importance sampling on a simple one-state MDP.
 This is based on Example 5.5 from "Reinforcement Learning: An Introduction" (Sutton & Barto, 2nd Edition).
 
@@ -27,7 +28,7 @@ The learning curve demonstrates the characteristic instability caused by infinit
 
 <p align="center"> <img src="book_images/Figure_5_4_2.PNG" alt="Learning Curve" width="600"/> </p>
 
-References
+References:
 Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction (2nd Edition), Example 5.5.
 
 
