@@ -6,7 +6,7 @@ This project implements **policy evaluation**, **policy improvement**, and **pol
 
 Consider the 4x4 gridworld shown below:
 
-![Gridworld](book_images/Example_4_1.png)
+![Gridworld](book_images/Example_4_1.PNG)
 
 ---
 
