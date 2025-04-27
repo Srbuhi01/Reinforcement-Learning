@@ -49,7 +49,7 @@ The discount rate is:
 
 **Environment layout (Figure 3.2):**
 
-![Gridworld Layout](../book_images/Figure_3_2.PNG)
+![Gridworld Layout](book_images/Figure_3_2.PNG)
 
 ---
 
