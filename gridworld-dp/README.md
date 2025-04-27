@@ -6,7 +6,7 @@ This project implements **policy evaluation**, **policy improvement**, and **pol
 
 Consider the 4x4 gridworld shown below:
 
-![Gridworld](generated_images/Example_4_1.png)
+![Gridworld](generated_images/Example_4_1_in_place.png)
 
 ---
 
@@ -50,7 +50,7 @@ Both methods arrive at the same final value function but with different iteratio
 
 The greedy policies corresponding to the value function estimates are shown below:
 
-![Policy Improvement](generated_images/Figure_4_1.png)
+![Policy Improvement](generated_images/figure_4_1_out_place.png)
 
 The arrows in the diagram show the optimal actions at each state.
 
