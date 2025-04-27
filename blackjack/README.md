@@ -59,14 +59,14 @@ The game is modeled as an episodic finite Markov Decision Process (MDP) and foll
 ### 1. Initial Policy Value Function (Figure 5.1)
 Visualizing the value function under the initial, random policy before learning:
 
-![Initial Policy Value Function](book_images/Figure_5_1.PNG)
+![Initial Policy Value Function](blackjack/book_images/Figure_5_1.PNG)
 
 ---
 
 ### 2. Optimal Policy via Monte Carlo Exploring Starts (Figure 5.2)
 After training with MC ES, the learned optimal policy is visualized:
 
-![Optimal Policy](book_images/Figure_5_2.PNG)
+![Optimal Policy](blackjack/book_images/Figure_5_2.PNG)
 
 ---
 
@@ -78,7 +78,7 @@ Two methods were compared:
 - **Ordinary Importance Sampling**
 - **Weighted Importance Sampling**
 
-![Importance Sampling Comparison](book_images/Figure_5_3.PNG)
+![Importance Sampling Comparison](blackjack/book_images/Figure_5_3.PNG)
 
 ---
 
