@@ -7,8 +7,7 @@ This project is an implementation of the SARSA algorithm (on-policy TD control) 
 
 ### SARSA (State-Action-Reward-State-Action)
 
-SARSA is an on-policy temporal-difference (TD) learning method used to estimate the action-value function 
-𝑄(𝑠 , 𝑎)
+SARSA is an on-policy temporal-difference (TD) learning method used to estimate the action-value function
 Q(s,a) while following the same policy being improved. The update rule for SARSA is:
 𝑄(𝑆𝑡 , 𝐴𝑡)← 𝑄(𝑆𝑡 , 𝐴𝑡) + 𝛼[𝑅𝑡+ 1+ 𝛾𝑄(𝑆𝑡 + 1 , 𝐴𝑡 + 1) − 𝑄(𝑆𝑡 , 𝐴𝑡)]
 
