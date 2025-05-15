@@ -16,7 +16,7 @@ This project implements the classic **Random Walk** example from Reinforcement L
   - `0` if terminated at state `0`
   - `0` otherwise
 
-## 🛠Implemented Methods
+## Implemented Methods
 
 - **Monte Carlo (MC)**: Updates state-values at the end of the episode using full returns.
 - **Temporal Difference (TD)**: Updates values incrementally using one-step bootstrapping.
@@ -28,5 +28,3 @@ This project implements the classic **Random Walk** example from Reinforcement L
 
  - RMSEs are averaged over 100 independent runs.
 
-##  References
-Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction (2nd ed).
