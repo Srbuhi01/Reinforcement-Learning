@@ -1,54 +1,64 @@
-## Multi-Armed Bandit Simulation
+# Multi-Armed Bandit Simulation
 
-### Overview
-This project simulates and analyzes different action selection strategies in a multi-armed bandit problem. The main focus is on comparing greedy and ε-greedy strategies, as well as exploring the impact of optimistic versus realistic initial values on learning performance.
+## Overview
+This project is an implementation and exploration of the Ten-Armed Testbed, a classic benchmark for evaluating action selection strategies in reinforcement learning, based on Chapter 2 of Sutton and Barto’s Reinforcement Learning: An Introduction.
 
-### Dependencies
-Ensure you have the following Python libraries installed before running the script:
-- `numpy`
-- `matplotlib`
-- `tqdm`
-- `fontTools`
-- `src.bandit` (Custom implementation of the Bandit class)
+The testbed simulates a 10-armed bandit problem where each arm provides stochastic rewards sampled from a stationary normal distribution. Through thousands of runs and time steps, various action selection algorithms are tested and compared based on their average reward and percentage of optimal actions taken. This gives insight into the trade-off between exploration and exploitation in reinforcement learning.
 
-To install missing dependencies, run:
-```bash
-pip install numpy matplotlib tqdm fonttools
-```
+The project focuses on:
 
-### Project Structure
-- `simulate(runs, times, bandits)`: Main function to run the bandit simulation.
-- `Bandit`: A custom class representing a multi-armed bandit environment.
-- `generated_images/`: Stores generated plots.
+- Reproducing Figures 2.1 to 2.5 from the textbook.
 
-### Usage
-1. **Reward Distribution (Figure 2.1)**
-   - A violin plot is generated to show the distribution of rewards for different actions.
+- Comparing strategies like ε-greedy, UCB, optimistic initial values, and gradient bandits.
 
-2. **Greedy vs. ε-Greedy Action Selection (Figure 2.2)**
-   - Runs simulations with different ε values (0, 0.1, 0.01) to analyze the impact of exploration.
-   - Plots:
-     - Average reward over time.
-     - Percentage of optimal actions taken.
+- Gaining intuition into how these methods behave in practice over time.
 
-3. **Optimistic vs. Realistic Initial Values (Figure 2.3)**
-   - Compares two settings:
-     - `ε = 0, Q1 = 5, α = 0.1`
-     - `ε = 0.1, Q1 = 0, α = 0.1`
-   - Evaluates the effect of initial action-value estimates on learning.
 
-### Running the Script
-Execute the script using:
+## Features
+* ε-Greedy Action Selection: Explore the impact of varying epsilon values (0, 0.1, 0.01).
 
-python script.py
+* Optimistic Initial Values: Encourages early exploration by initializing action values optimistically.
 
-Output
-- The generated figures will be saved in the `generated_images/` directory as:
-  - `figure_2_1.png`
-  - `figure_2_2.png`
-  - `figure_2_3.png`
+* Upper Confidence Bound (UCB): Balances exploration and exploitation using uncertainty estimates.
 
-Notes
+* Gradient Bandit Algorithm: Uses a preference-based approach with optional reward baselines.
+
+* Extensive Visualization: Reproduces all major plots from Chapter 2 (Figures 2.1–2.5).
+
+* Scalable Simulation: Easily configurable number of runs, steps, and algorithms.
+---
+
+## Dependencies
+ - To run this project, you will need:
+
+ - Python 3.X
+
+ - numpy
+
+ - matplotlib
+
+ - tqdm – for visual progress bars
+
+
+## Files and Modules
+* bandit.py	- Core implementation of the Bandit class, supporting all algorithms.
+* ten_armed_testbed.ipynb - Jupyter notebook that runs all simulations and generates plots.
+* generated_images - Folder where all output figures (Figures 2.1 to 2.5) are saved as PNGs.
+* README.md	- This documentation file.
+
+## Expected Outputs
+- Upon running the simulation, the following visualizations will be saved in the generated_images/ directory:
+
+#### Figure	Description
+> figure_2_1.png	Reward distributions of the 10 actions (used to illustrate variance).
+> figure_2_2.png	Comparison of ε-greedy algorithms (ε = 0, 0.1, 0.01). Shows average reward and % optimal action.
+> figure_2_3.png	Performance of optimistic initial values vs ε-greedy with normal values.
+> figure_2_4.png	UCB action selection compared with ε-greedy.
+> figure_2_5.png	Gradient bandit algorithm with different step sizes and baseline usage.
+
+---
+
+## Notes
 - The `Bandit` class should be defined in `src/bandit.py`.
 - The code uses `matplotlib.use('Agg')` to avoid GUI issues when running on a headless server.
 
