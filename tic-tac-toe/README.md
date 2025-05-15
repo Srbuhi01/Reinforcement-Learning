@@ -1,9 +1,26 @@
-# Reinforcement Learning Tic-Tac-Toe
+# Tic-Tac-Toe
 
 ## Overview
-This project implements a Reinforcement Learning (RL) agent for playing Tic-Tac-Toe. The RL players are trained using a value-based learning approach, and they can compete against each other or play against a human player.
+This project explores a classic example of Reinforcement Learning (RL) through the simple yet strategic game of Tic-Tac-Toe. It serves as an educational demonstration of how intelligent agents can learn optimal decision-making behaviors by interacting with an environment—in this case, a 3x3 game board.
+
+The implemented RL agents use a value-based learning approach, where each possible board configuration (or "state") is assigned a value representing the estimated probability of winning from that state. These values are refined over time by playing thousands of games against each other, gradually improving their strategies through experience.
+
+Unlike traditional game-solving techniques (like minimax), this approach doesn’t rely on perfect foresight or a complete model of the opponent. Instead, the agent learns solely from the outcomes of its own moves and gradually adapts to maximize rewards (wins).
+
+Key goals of this project:
+
+Demonstrate how reinforcement learning can be applied to discrete, episodic environments like board games.
+
+Compare performance between self-trained agents using value functions.
+
+Enable a human player to challenge a trained AI to observe and evaluate learned behavior.
+
+Highlight the importance of exploration vs. exploitation and temporal-difference learning.
+
+This project is a hands-on application of RL concepts from foundational texts like Sutton & Barto's Reinforcement Learning: An Introduction, making it a great starting point for anyone learning about machine learning, artificial intelligence, or autonomous agents.
 
 ## Features
+
 - **Train RL players**: Two RL agents learn to play Tic-Tac-Toe using self-play.
 - **Compete**: The trained agents can compete against each other with optimal strategies.
 - **Human vs AI**: A human player can challenge the trained AI.
