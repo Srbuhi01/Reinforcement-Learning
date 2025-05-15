@@ -4,7 +4,7 @@ This project implements the **Gambler's Problem** using **Value Iteration**, bas
 
 ---
 
-## 📌 Problem Overview
+## Overview
 
 A gambler aims to reach a goal of `$100` by betting on the outcome of a biased coin (with probability `p_h = 0.4` of heads).  
 At each state (capital), the gambler can choose a stake and transitions to a new state depending on the result of the coin toss.
@@ -12,17 +12,28 @@ At each state (capital), the gambler can choose a stake and transitions to a new
 **Goal:** Maximize the probability of reaching the goal (capital = 100).
 
 ---
+## Features
+- Biased Coin Toss:
+  - Probability of heads (p_h) = 0.4.
+  - Reward only upon reaching the goal.
+- States: Capital values from 0 to 100.
+- Terminal States: 0 (loss) and 100 (goal) — both are absorbing.
+- Value Iteration Algorithm:
+  - Iteratively updates the value function V(s) for all states.
+  - Computes optimal policy π*(s) that maximizes expected return.
+  - Stops when the maximum change in value is less than a small threshold (ε = 1e-9).
 
-## Algorithm Used
-
-- **Value Iteration**:
-  - Iteratively updates state-value function `V(s)`.
-  - Chooses actions that yield the maximum expected return.
-  - Stops when the maximum value change in a sweep is below a small threshold ε (`1e-9`).
-
+## Expected Outputs
+- Value Estimates per Sweep:
+  - Shows how V(s) evolves over iterations.
+- Final Policy:
+  - Indicates the optimal stake to bet at each capital level.
+- High-Resolution Plot:
+  - Value estimates and final policy are saved as a .png image:
+    - ![image](gambler-problem/gambler-problem/generated_images/figure_4_3.png)
 ---
 
-## 📈 Output
+## Output
 
 - **Value Estimates per Sweep**: How the value function evolves with each iteration.
 - **Final Policy**: Optimal stake to bet at each capital level.
