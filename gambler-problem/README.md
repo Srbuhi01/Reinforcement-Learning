@@ -30,7 +30,7 @@ At each state (capital), the gambler can choose a stake and transitions to a new
   - Indicates the optimal stake to bet at each capital level.
 - High-Resolution Plot:
   - Value estimates and final policy are saved as a .png image:
-    - ![image](gambler-problem/gambler-problem/generated_images/figure_4_3.png)
+    - ![Value estimates and final policy](book_images/Figure_4_3.PNG)
 ---
 
 ## Output
