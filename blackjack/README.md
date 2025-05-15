@@ -46,7 +46,7 @@ The game is modeled as an episodic finite Markov Decision Process (MDP) and foll
 - Dealer’s showing card (Ace–10)
 - Usable ace (True/False)
 
-➡️ **Total states**: 200
+ **Total states**: 200
 
 **Actions**:
 - **Hit**
@@ -89,12 +89,7 @@ Two methods were compared:
 
 ---
 
-## 📚 References
-Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd Edition), Chapter 5.
-
----
-
-## ✅ Summary:
+##  Summary:
 - Implemented Blackjack as an episodic MDP.
 - Trained optimal policies using **Monte Carlo Exploring Starts (MC ES)**.
 - Extended the project with **off-policy evaluation** using **weighted importance sampling** for robust value estimation.
