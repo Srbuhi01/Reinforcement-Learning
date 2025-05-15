@@ -23,13 +23,13 @@ The project demonstrates how ordinary importance sampling can lead to **infinite
   - \( R = 0 \) and episode ends immediately.
 
 - Choosing **left**:
-  - 90% probability: stay in the same state with \( R = 0 \),
-  - 10% probability: move to terminal state with \( R = +1 \).
+  - 90% probability: stay in the same state with  R = 0 ,
+  - 10% probability: move to terminal state with  R = +1.
 
 ---
 
 ## Goal
-Estimate the expected return \( V_{\pi}(S) \) using episodes generated under the behavior policy \( b \)  
+Estimate the expected return  Vπ(S)  using episodes generated under the behavior policy  b 
 with **ordinary importance sampling** and observe the effect of **infinite variance**.
 
 ---
@@ -41,9 +41,4 @@ replicating the behavior seen in the reference book.
 
 ![Learning Curve](infinite-variance/book_images/Figure_5_4_2.PNG)
 
----
 
-## 📚 References
-Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd Edition), Example 5.5.
-
----
