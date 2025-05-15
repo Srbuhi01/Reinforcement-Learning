@@ -32,17 +32,17 @@ Here:
 
 ### Key details:
 
-Actions: Up, Down, Left, Right
+ * Actions: Up, Down, Left, Right
 
-Wind strength: Specified per column
+ * Wind strength: Specified per column
 
-Rewards: -1 per step
+ * Rewards: -1 per step
 
-Discount: γ = 1
+ * Discount: γ = 1
 
-Exploration: ε-greedy with ε = 0.1
+ * Exploration: ε-greedy with ε = 0.1
 
-Learning rate: α = 0.5
+ * Learning rate: α = 0.5
 
 ##  Algorithm Used
 We use ε-greedy SARSA to learn an optimal policy over 500 episodes. At each step:
@@ -56,16 +56,13 @@ We use ε-greedy SARSA to learn an optimal policy over 500 episodes. At each ste
 Performance improves over episodes, as shown in the learning curve (time steps vs. episodes).
 
 ## Results
-Q-table converged to an optimal policy in less than 500 episodes.
+ * Q-table converged to an optimal policy in less than 500 episodes.
 
-The optimal policy successfully guides the agent to the goal with minimal steps.
+ * The optimal policy successfully guides the agent to the goal with minimal steps.
 
-Cumulative time steps decreased consistently as the agent learned.
+ * Cumulative time steps decreased consistently as the agent learned.
 
-Final policy example (G = goal):
+ * Final policy example (G = goal):
 
-## References
-Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction. Chapter 6: Temporal-Difference Learning.
 
-Example 6.5: Windy Gridworld
 
