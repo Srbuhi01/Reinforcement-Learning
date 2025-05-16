@@ -39,6 +39,6 @@ with **ordinary importance sampling** and observe the effect of **infinite varia
 The learning curve demonstrates the characteristic instability caused by infinite variance,  
 replicating the behavior seen in the reference book.
 
-![Learning Curve](infinite-variance/book_images/Figure_5_4_2.PNG)
+![Learning Curve](book_images/Figure_5_4_2.PNG)
 
 
