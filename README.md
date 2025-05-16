@@ -27,7 +27,7 @@
     > This project trains a Reinforcement Learning (RL) agent to play Tic-Tac-Toe through self-play, enabling it to learn optimal strategies over time. It features a Human vs AI mode for interactive gameplay, incorporates early detection of win or tie conditions to improve efficiency, and demonstrates continuous strategy improvement as the agent gains experience. The main implementation can be found in the tic-tac-toe.py file.
 
 
- * [2. Ten-Armed Testbed (Multi-Armed Bandit)](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/ten-armed-testbe)
+ * [2. Ten-Armed Testbed (Multi-Armed Bandit)](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/ten-armed-testbed)
     > This project simulates the multi-armed bandit problem to illustrate the exploration-exploitation trade-off, a core concept in Reinforcement Learning. It implements several action-selection strategies, including ε-greedy, Upper Confidence Bound (UCB), and Gradient Bandits. Key concepts demonstrated include action-value estimation and the impact of optimistic versus realistic initial value assumptions. The main implementation is provided in the `ten-armed-testbed.ipynb` notebook.
 
    
@@ -51,6 +51,10 @@
 
 * [9. Windy Gridworld](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/windy-gridworld)
     > This project implements the SARSA algorithm—an on-policy temporal-difference (TD) control method—on the Windy Gridworld environment. The environment is a 7x10 grid where varying wind strengths push the agent upward, challenging it to find an optimal path from start to goal. Using an ε-greedy policy with ε=0.1, a learning rate α=0.5, and discount factor γ=1, the agent updates its action-value estimates online through SARSA’s update rule over 500 episodes. The project demonstrates how SARSA learns to navigate the wind and improves performance as training progresses.  The main implementation is located in the `windy_grid_world.ipynb` notebook.
+
+* [10. Cliff Walking](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/cliff-walking)
+    > This project compares three reinforcement learning algorithms—SARSA, Expected SARSA, and Q-Learning—on the classic Cliff Walking environment. The agent navigates a 4×12 grid from start to goal while avoiding a cliff that gives a −100 penalty. SARSA learns safer paths through on-policy updates, Q-Learning aims for the optimal but riskier path via off-policy learning, and Expected SARSA balances both using expected values. The implementation is split between cliff_walking.py for core logic and cliff_walking.ipynb for training and visualization.
+
 
   
 ---
