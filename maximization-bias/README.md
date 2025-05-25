@@ -44,7 +44,7 @@ We track how often each algorithm chooses the `left` action from state A, averag
 
 ##  Results
 
-![Q vs Double Q](../generated_images/figure_6_5.png)
+![Q vs Double Q](generated_images/figure_6_5.png)
 
 - **Q-learning**: tends to select the `left` action significantly more often than the optimal 5%.
 - **Double Q-learning**: closely matches the optimal selection frequency, effectively eliminating maximization bias.
