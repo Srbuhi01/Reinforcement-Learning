@@ -63,8 +63,9 @@ The goal is to estimate the **value of each non-terminal state** using n-step TD
 - Observations:
   - Small n: faster updates but more variance in value estimates  
   - Large n: smoother updates, closer to true values, but slower convergence  
-- The generated plot shows RMS error vs step-size (α) for each n-step value.  
-- ![`figure_7_2.png`](generated_images/figure_7_2.png)
+- The generated plot shows RMS error vs step-size (α) for each n-step value.
+  
+   ![`figure_7_2.png`](generated_images/figure_7_2.png)
 
 ---
 
