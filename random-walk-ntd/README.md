@@ -6,21 +6,18 @@ This project implements **n-step Temporal Difference (TD) learning** for a simpl
 
 ## Project Structure
 
-random-walk-ntd/
-│
-├── .idea/
-├── book_images/
-│ └── Example_6_2_top.PNG
-│ └── Figure_7_2.PNG
-├── generated_images/
-│ └── figure_7_2.png
-├── notebooks/
-│ └── random_walk.ipynb # Main notebook to run simulations and generate plots
-├── src/
-│ └── __init__.py
-│ └── random_walk.py # Contains n-step TD function and hyper-parameters
-├── requirements.txt # Python dependencies
-└── README.md # This file
+random-walk-ntd/        
+ ├── .idea/             
+ ├── book_images/        
+ ├── generated_images/  
+ ├── notebooks/         
+ │   └── random_walk.ipynb
+ ├── src/                
+ │   └── __init__.py
+ ├── random_walk.py      
+ ├── requirements.txt   
+ └── README.md          
+
 
 ---
 
