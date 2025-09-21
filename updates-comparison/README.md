@@ -62,6 +62,7 @@ updates-comparison/
 
       > X-axis: computations per branching factor (0, b, 2b)
       > Y-axis: RMS error in value estimate
----
+-----
 
-   ![`figure_8_7.png`](updates-comparison/generated_images/figure_8_7.png)
+
+![`figure_8_7.png`](updates-comparison/generated_images/figure_8_7.png)
