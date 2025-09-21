@@ -64,4 +64,4 @@ updates-comparison/
       > Y-axis: RMS error in value estimate
 ---
 
-   ![`Resultt](updates-comparison/generated_images/figure_8_7.png)
+   ![`figure_8_7.png`](updates-comparison/generated_images/figure_8_7.png)
