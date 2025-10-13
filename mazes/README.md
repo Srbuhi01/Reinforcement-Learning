@@ -67,6 +67,6 @@ The experiment replicates *Example 8.4* from Sutton & Barto.
 
 The plot below (from `prioritized_sweeping.ipynb`) summarizes the performance:
 
-![plot](generated_images/example_8_4.png)
+![example_8_4.png](generated_images/example_8_4.png)
 
 
