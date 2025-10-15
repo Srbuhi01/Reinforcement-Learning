@@ -71,12 +71,52 @@ Implements **Bootstrapping** techniques to estimate the value function using par
 
 ---
 
-## Upcoming Notebooks
+### **4. `notebooks/polynomials_vs_fourier.ipynb`**
 
-| Notebook | Description | Status |
-|-----------|--------------|--------|
-| `polynomials_vs_fourier.ipynb` | Comparison between polynomial and Fourier basis for function approximation | ⏳ Planned |
-| `tile_coding.ipynb` | Implementation of tile coding for continuous state approximation | ⏳ Planned |
+Demonstrates **Polynomial vs Fourier Basis** function approximation for the 1000-state random walk.
+
+#### Description
+Compares the performance of polynomial and Fourier bases for value function approximation. Fourier bases are generally more stable for online learning.
+
+#### Procedure
+1. Compute true values with `compute_true_value()`.
+2. Initialize `BasesValueFunction` with different orders (5, 10, 20) for both polynomial and Fourier bases.
+3. Apply Gradient Monte Carlo for **5000 episodes**.
+4. Track state values and root-mean-squared error (RMSE) for each episode.
+5. Plot learning curves comparing the bases.
+6. Save the plot to `generated_images/figure_9_5.png`.
+
+#### Output
+- `generated_images/figure_9_5.png` — Learning curves comparing polynomial vs Fourier bases
+
+#### Key Takeaways
+- Polynomial bases may be unstable for online learning, especially with higher orders.
+- Fourier bases provide smoother approximations and better generalization.
+- RMSE curves illustrate differences in convergence speed and accuracy between the two bases.
+
+---
+
+### **5. `notebooks/tile_coding.ipynb`**
+
+Implements **Tile Coding** for function approximation of the 1000-state random walk.
+
+#### Description
+Tile coding helps approximate large or continuous state spaces more precisely compared to simple state aggregation.
+
+#### Procedure
+1. Compute true values with `compute_true_value()`.
+2. Initialize `TilingsValueFunction` with 50 tilings and 200 states per tile.
+3. Apply Gradient Monte Carlo for **5000 episodes**, using a changing step-size per episode.
+4. Track RMSE for each episode and compare tile coding vs single tiling (state aggregation).
+5. Plot error curves and save to `generated_images/figure_9_10.png`.
+
+#### Output
+- `generated_images/figure_9_10.png` — Learning curves comparing Tile Coding vs Single Tiling
+
+#### Key Takeaways
+- Multiple tilings provide more accurate and faster convergence.
+- Single tiling produces staircase-like approximation and slower learning.
+- Varying step-size improves asymptotic performance for high-parameter approximations.
 
 ---
 
@@ -88,7 +128,13 @@ Implements **Bootstrapping** techniques to estimate the value function using par
 ### **Bootstrapping**
 > Updates estimates using other estimates — a core principle behind **Temporal-Difference (TD)** learning.
 
-Together, these methods demonstrate how function approximation helps reinforcement learning scale beyond tabular problems.
+### **Polynomial & Fourier Bases**
+> Represent states as features using polynomial or Fourier functions. Fourier bases are generally more stable for online learning.
+
+### **Tile Coding**
+> Uses overlapping tilings to provide richer feature representation for large or continuous state spaces.
+
+Together, these methods demonstrate how function approximation allows reinforcement learning to scale beyond tabular problems.
 
 ---
 
