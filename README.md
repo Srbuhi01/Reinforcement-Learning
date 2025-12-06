@@ -73,8 +73,21 @@
 
 * [17. Update Comparison](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/updates-comparison)
    > This project reproduces Figure 8.7 from Sutton & Barto, comparing expectation (distribution) vs sample models in value estimation. It tracks RMS error between sample-based estimates and true values across different branching factors. Results show that sample-based estimates converge slower for larger branching factors but remain practical, while expectation-based models compute exact means. Implementation is provided in expectation_vs_sample.ipynb.
-
   
+* [18. Access Control](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/access-control)
+   > This project applies differential semi-gradient Sarsa to the Access-Control Queue task, a continuing average-reward problem from Sutton & Barto. The agent learns when to accept or reject incoming customers of various priorities under limited server capacity, aiming to maximize long-term average reward. Although implemented tabularly, the method fits naturally into linear function approximation, treating each state–action pair as a feature vector. Experiments show how the learned ε-greedy policy balances resource management—rejecting low-priority customers when servers are scarce and accepting more when capacity is available. The notebook includes visualizations of the learned policy and differential value estimates.
+
+* [19. Mountain-Car](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/mountain-car)
+   > This project applies n-step semi-gradient Sarsa with tile coding to solve the Mountain Car control problem. The agent learns to drive an underpowered car up a steep hill in a continuous state space, using tile-coded features to approximate the action-value function. Experiments evaluate how the bootstrapping depth (n) and step size (α) influence learning speed and stability. Results show that multi-step methods (especially 4–8 steps) achieve faster learning than the 1-step version, and that performance depends strongly on α·n. The notebook reproduces Figures 10.3–10.4 from Sutton & Barto, including learning curves and comparisons across different n-step configurations.
+
+* [20. Counter Examples](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/counter-examples)
+   > This project recreates Baird’s classic counterexample to illustrate the instability caused by the “deadly triad”: function approximation, bootstrapping, and off-policy learning. A clean implementation of the MDP, feature encodings, and update rules is provided, along with notebooks that reproduce key figures from Sutton & Barto. Experiments show the divergence of semi-gradient TD(0) and the stability of Gradient TD and Emphatic TD methods. The project highlights why off-policy TD learning can fail even in simple linear settings and demonstrates how gradient-correct algorithms avoid this instability.
+  
+* [21. Random Walk Eligibility Traces](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/random-walk-et)
+   > This project reproduces the experiments from Chapter 12 of Sutton & Barto (2018) using the classic 19-state random walk environment to compare different λ-based value prediction methods. I implemented Off-line λ-return, TD(λ), and True Online TD(λ), built a complete experiment pipeline, ran multiple runs over varying α and λ values, and measured RMS error to evaluate learning accuracy and stability. The results successfully recreate Figures 12.3, 12.6, and 12.8 from the textbook and provide a clear comparison of how the forward view, backward view, and true online approaches behave across different parameter settings.
+  
+* [22. Mountain-Car Eligibility Traces](https://github.com/Srbuhi01/Reinforcement-Learning/tree/main/mountain-car-et)
+   > This project implements and analyzes Sarsa(λ) on the Mountain Car control task, demonstrating the use of eligibility traces with function approximation. The agent learns to escape a steep valley by building momentum, using tile-coded features to transform the continuous state space into a sparse linear representation. Multiple eligibility-trace variants—including accumulating, replacing, Dutch, and replacing-with-clearing—are compared across step sizes and λ values. Experiments reproduce key learning behaviors from Sutton & Barto, and plots illustrate how different traces influence learning speed and stability. The main implementation is in mountain_car.ipynb, with environment dynamics and agent logic separated in src/ for easy reuse and extension.
 ---
 
 ## Installation
